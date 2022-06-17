@@ -31,7 +31,7 @@ const mercadoPago = require('mercadopago');
 
 mercadoPago.configure({
   sandbox:true,
-  access_token: process.env.ACCESS_TOKEN="TEST-4522866936185161-060717-f824639b1aacf466f87fac9532a581d1-409071910"
+  access_token: process.env.ACCESS_TOKEN=""
 })
 
 const date = Date;
