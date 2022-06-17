@@ -1,0 +1,309 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+header
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	display: grid;
+	place-items: center;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header h1
+{
+	color: white;
+	background-color: #ee4d2d;
+	padding: 15px;
+}
+
+header .linha-reta
+{
+	border: 1px solid #ee4d2d;
+	width: 100%;
+}
+
+.container
+{
+	/*border: 1px solid black;*/
+	background-color: #F5F5F5;
+	margin-top: 120px;
+	padding: 15px;
+}
+
+#form-cadastro
+{
+	margin-top: 50px;
+}
+
+
+.container p 
+{
+	color: #ee4d2d;
+	font-weight: 600;
+}
+
+.container #voltar
+{
+	text-decoration: none;
+	background-color: white;
+	color: #ee4d2d;
+	font-weight: 600;
+	padding: 15px;
+}
+
+
+.container .painel 
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: white;
+}
+
+.quadros
+{
+	/*border: 1px solid blue;*/
+	width: 50%;
+	padding: 10px;
+}
+
+.quadros button
+{
+	border-style: none;
+	background-color: #32CD32;
+	margin-top: 20px;
+	padding: 15px;
+	color: white;
+}
+
+.quadros button:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+
+.pure-footer
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 650px;
+	margin-top: 15px;
+	background-color: #ee4d2d;
+}
+
+.pure-footer .container-sm
+{
+	/*border: 1px solid #ee4d2d;*/
+	margin-top: 15px; 
+	height: 100%;
+	display: flex;
+	background-color: white;
+}
+
+.pure-footer .container-sm .div-colors
+{
+	/*border: 1px solid #ee4d2d;*/ 
+	width: 100%;
+	height: 100%;
+	padding-top: 15px;
+	padding-left: 15px;
+	background-color: #ee4d2d;
+}
+
+.pure-footer .container-sm .div-colors p 
+{
+	color: white;
+	font-weight: 600;
+}
+
+.pure-footer .container-sm .div-colors a 
+{
+	color: white;
+	text-decoration: none;
+}
+
+
+.pure-footer .container-sm .div-colors a:hover
+{
+	color: #00BFFF;
+	transition: 0.6s;
+}
+
+.container .deletar
+{
+	background-color: #FF0000;
+	width: 250px;
+	color: white;
+	padding: 15px;
+	font-weight: 600;
+	border-style: none;
+}
+
+.container .deletar:hover
+{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 0.6s;
+}
+
+.container .afastar
+{
+	/*border: 1px solid blue;*/
+	margin-top: 15px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	display: grid;
+	place-items: center;
+}
+
+.container .afastar #button-blue
+{
+	background-color: #32CD32;
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-style: none;
+}
+
+.container .afastar #button-blue:hover
+{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 0.6s;
+}
+
+.container .afastar .espacamento-div
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	display: grid;
+	place-items: center;
+}
+
+
+.container .afastar .espacamento-div .espacamento-button-comprar
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	display: grid;
+	place-items: center;
+}
+
+.container .afastar #tamanhos
+{
+	width: 25px;
+	height: 25px;
+}
+
+.container #ids 
+{
+	background-color: #32CD32;
+	width: 100%;
+	padding-left: 50%;
+	padding-right: 50%;
+	color: white;
+}
+
+@media only screen and (max-width: 600px){
+
+	.container img
+	{
+      width: 60px;
+      height: 60px;
+	}
+
+	.container #voltar
+	{
+		padding: 10px;
+		font-size: 10px;
+	}
+
+	.container #deletando
+	{
+		padding: 10px;
+		font-size: 10px;
+	}
+
+	.container .afastar p 
+	{
+		font-size: 10px;
+	}
+
+	.pure-footer
+	{
+	  	background-color: #F5F5F5;
+	  	height: 559px;
+	}
+
+	  .pure-footer .container-sm
+	{
+	  	background-color: white;
+	}
+
+	  .pure-footer .container-sm .div-colors
+	{
+	  	padding-left: 25px;
+	}
+
+	.pure-footer .container-sm .div-colors p 
+	{
+		font-size: 10px;
+	}
+
+	.pure-footer .container-sm .div-colors a 
+	{
+		color: white;
+		text-decoration: none;
+		font-size: 10px;
+	}
+
+  .pure-footer .container-sm .div-colors a:hover
+	{
+		color: #00BFFF;
+		transition: 0.6s;
+	}
+
+	.quadros button
+	{
+		font-size: 10px;
+		padding: 10px;
+	}
+
+	.container .afastar #button-blue
+	{
+		font-size: 10px;
+		padding: 10px;
+	}
+
+	.container .afastar #tamanhos
+	{
+		width: 20px;
+		height: 20px;
+	}
+
+	.container .afastar .espacamento-div
+	{
+		padding-left: 14%;
+		padding-right: 10%;
+	}
+
+	.container .afastar .espacamento-div label
+	{
+		font-size: 10px;
+	}
+}

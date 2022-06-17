@@ -1,0 +1,866 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+header
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100px;
+	display: grid;
+	place-items: center;
+	background-color: #F5F5F5;
+}
+
+header .painel-bolas
+{
+	/*border: 1px solid black;*/
+	width: 650px;
+	height: 100px;
+	border-radius: 10px 10px 0px 0px; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
+
+header .painel-bolas .bolas 
+{
+	/*border: 1px solid red;*/
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: grid;
+	place-items: center;
+	background-color: #ee4d2d;
+}
+
+header .painel-bolas .bola-blue
+{
+	background-color: #ee4d2d;
+}
+
+header .painel-bolas .bola-blue p
+{
+	font-size: 30px;
+	color: white;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+header .painel-bolas .bolas:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+header .painel-bolas .bolas img 
+{
+	width: 50px;
+}
+
+header .painel-legenda
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	display: grid;
+	place-items: center;
+}
+
+header .painel-legenda .linha-reta
+{
+	border: 1px solid #ee4d2d;
+	width: 100%;
+}
+
+.central-banner
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 559px;
+	float: left;
+	margin-top: 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.central-banner .quadros-banner
+{
+	/*border: 1px solid blue;*/
+	width: 50%;
+	height: 100%;
+}
+
+
+.central-banner #left 
+{
+  background: radial-gradient(#FFD700,#FFFF00);
+}
+
+.central-banner #left .quadro-banner-legenda
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100px;
+	background-color: #F5F5F5;
+	display: grid;
+	place-items: center;
+}
+
+.central-banner #left .quadro-banner-body
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 200px;
+	display: grid;
+	place-items: center;
+}
+
+.central-banner #left .quadro-banner-body img 
+{
+	width: 150px;
+	height: 150px;
+}
+
+.central-banner #left .quadro-banner-form
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 150px;
+	background-color: #F5F5F5;
+	display: grid;
+	place-items: center;
+}
+
+.central-banner #left .quadro-banner-form button
+{
+	margin-top: 5px;
+	background-color: #32CD32;
+	padding: 5px;
+	border-style: none;
+	color: white;
+	font-weight: 600;
+}
+
+.central-banner #left .quadro-banner-form button:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+.central-banner #left .quadro-banner-result
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 109px;
+	background-color: #F5F5F5;
+	display: grid;
+	place-items: center;
+}
+
+.central-banner #left .quadro-banner-result a 
+{
+	text-decoration: none;
+	color: black;
+}
+
+.central-banner #left .quadro-banner-result a:hover
+{
+	color: #00BFFF;
+	transition: 0.6s;
+}
+
+.central-banner #right 
+{
+  /*border: 2px solid black;*/
+}
+
+.central-banner #right .wallpapers-logo
+{
+	/*border: 1px solid #ee4d2d;*/
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow: hidden;
+}
+
+.central-banner #right .wallpapers-logo img 
+{
+	width: 1000px;
+	height: 100%;
+}
+
+.central-banner #right .wallpapers-logo #animar
+{
+  animation: animar 10s infinite;
+}
+
+@keyframes animar{
+	0%{margin-left: 0px;}
+	20%{margin-left: -1000px;}
+	40%{margin-left: -2000px;}
+	60%{margin-left: -3000px;}
+	80%{margin-left: -4000px;}
+	100%{margin-left: 0px;}
+}
+
+.central-banner #right img 
+{
+	width: 100%;
+	height: 100%;
+}
+
+.quadro-login
+{
+	/*border: 1px solid red;*/
+	width: 300px;
+	height: 559px;
+	float: right;
+	margin-right: 30px;
+}
+
+.quadro-login .legenda-login
+{
+  /*border: 5px solid #DCDCDC;*/
+  width: 100%;
+  height: 50px;
+  background-color: #F5F5F5;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.quadro-login .legenda-login p 
+{
+	margin-top: 12px;
+	background-color: #ee4d2d;
+	padding: 15px;
+}
+
+.quadro-login .logo-login
+{
+  /*border: 5px solid #DCDCDC;*/
+  width: 100%;
+  height: 300px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #F5F5F5;
+}
+
+.quadro-login .logo-login button
+{
+	border-style: none;
+	width: 100%;
+	padding: 15px;
+	background-color: #32CD32;
+	margin-top: 5px;
+	color: white;
+	font-weight: 600;
+}
+
+.quadro-login .logo-login button:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+.quadro-login .footer-login
+{
+	/*border: 5px solid #DCDCDC;*/
+	width: 100%;
+	height: 50px;
+	background-color: #F5F5F5;
+	display: grid;
+	place-items: center;
+}
+
+.quadro-login .footer-login a 
+{
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	background-color: #1E90FF;
+	padding: 15px;
+}
+
+.quadro-login .footer-login a:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+.container
+{
+	/*border: 1px solid black;*/
+	height: 100%;
+	margin-top: 250px;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F5F5F5;
+}
+
+.container .quadro 
+{
+	/*border: 1px solid red;*/
+	width: 50%;
+	height: 559px;
+	background-color: white;
+}
+
+.container .quadro .body-legenda
+{
+  border: 5px solid #DCDCDC;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .quadro .body-body
+{
+	border: 5px solid #DCDCDC;
+	width: 100%;
+	height: 300px;
+	display: flex;
+}
+
+.container .quadro .body-body .img_and_descricao
+{
+  /*border: 1px solid blue;*/
+  width: 50%;
+  height: 100%;
+}
+
+.container .quadro .body-body #img 
+{
+	display: grid;
+	place-items: center;
+}
+
+.container .quadro .body-body .img_and_descricao .imagem 
+{
+	/*border: 1px solid black;*/
+	width: 250px;
+	height: 250px;
+	background-color: #F5F5F5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .quadro .body-body .img_and_descricao .precos
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 50px;
+	background-color: #F5F5F5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .quadro .body-body .img_and_descricao .precos p 
+{
+	margin-top: 15px;
+}
+
+.container .quadro .body-footer
+{
+	border: 1px solid #DCDCDC;
+	width: 100%;
+	height: 100px;
+	display: grid;
+  place-items: center;
+  background-color: #32CD32;
+}
+
+.container .quadro .body-footer:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+.container .quadro .body-footer button
+{
+  border-style: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+.pure-footer
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 650px;
+	margin-top: 15px;
+	background-color: #ee4d2d;
+}
+
+.pure-footer .container-sm
+{
+	/*border: 1px solid #ee4d2d;*/
+	margin-top: 15px; 
+	height: 100%;
+	display: flex;
+	background-color: white;
+}
+
+.pure-footer .container-sm .div-colors
+{
+	/*border: 1px solid #ee4d2d;*/ 
+	width: 100%;
+	height: 100%;
+	padding-top: 15px;
+	padding-left: 15px;
+	background-color: #ee4d2d;
+	
+}
+
+.pure-footer .container-sm .div-colors p 
+{
+	color: white;
+	font-weight: 600;
+}
+
+.pure-footer .container-sm .div-colors a 
+{
+	color: white;
+	text-decoration: none;
+}
+
+
+.pure-footer .container-sm .div-colors a:hover
+{
+	color: #00BFFF;
+	transition: 0.6s;
+}
+
+
+
+@media only screen and (max-width: 1440px){
+	.quadro-login
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+	float: right;
+	margin-right: 0px;
+}
+
+.quadro-login .legenda-login
+{
+  /*border: 5px solid #DCDCDC;*/
+  width: 100%;
+  height: 50px;
+  background-color: #F5F5F5;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.quadro-login .legenda-login p 
+{
+	margin-top: 12px;
+	background-color: #ee4d2d;
+	padding: 15px;
+}
+
+.quadro-login .logo-login
+{
+  /*border: 5px solid #DCDCDC;*/
+  width: 100%;
+  height: 300px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #F5F5F5;
+}
+
+.quadro-login .logo-login button
+{
+	border-style: none;
+	width: 100%;
+	padding: 15px;
+	background-color: #32CD32;
+	margin-top: 5px;
+	color: white;
+	font-weight: 600;
+}
+
+.quadro-login .logo-login button:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+.quadro-login .footer-login
+{
+	/*border: 5px solid #DCDCDC;*/
+	width: 100%;
+	height: 50px;
+	background-color: #F5F5F5;
+	display: grid;
+	place-items: center;
+}
+
+.quadro-login .footer-login a 
+{
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	background-color: #1E90FF;
+	padding: 15px;
+}
+
+.quadro-login .footer-login a:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+}
+
+
+@media only screen and (max-width: 1025px){
+
+.quadro-login
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
+	float: right;
+	margin-right: 0px;
+}
+
+.quadro-login .legenda-login
+{
+  /*border: 5px solid #DCDCDC;*/
+  width: 100%;
+  height: 50px;
+  background-color: #F5F5F5;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.quadro-login .legenda-login p 
+{
+	margin-top: 12px;
+	background-color: #ee4d2d;
+	padding: 15px;
+}
+
+.quadro-login .logo-login
+{
+  /*border: 5px solid #DCDCDC;*/
+  width: 100%;
+  height: 300px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #F5F5F5;
+}
+
+.quadro-login .logo-login button
+{
+	border-style: none;
+	width: 100%;
+	padding: 15px;
+	background-color: #32CD32;
+	margin-top: 5px;
+	color: white;
+	font-weight: 600;
+}
+
+.quadro-login .logo-login button:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+.quadro-login .footer-login
+{
+	/*border: 5px solid #DCDCDC;*/
+	width: 100%;
+	height: 50px;
+	background-color: #F5F5F5;
+	display: grid;
+	place-items: center;
+}
+
+.quadro-login .footer-login a 
+{
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	background-color: #1E90FF;
+	padding: 15px;
+}
+
+.quadro-login .footer-login a:hover
+{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: 0.6s;
+}
+
+.container 
+{
+	/*border: 1px solid black;*/
+}
+
+.container .quadro .body-body .img_and_descricao .imagem 
+{
+  width: 150px;
+  height: 150px;
+}
+
+.container .quadro .body-body .img_and_descricao .precos
+{
+  /*border: 1px solid blue;*/
+  height: 30px;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  header .painel-bolas{
+    width: 350px;
+    height: 80px;
+  }
+
+  header .painel-bolas .bolas 
+  {
+  	width: 50px;
+  	height: 50px;
+  }
+
+  header .painel-bolas .bolas img 
+  {
+  	width: 15px;
+  }
+
+  header .painel-bolas .bola-blue p
+  {
+  	font-size: 20px;
+  }
+
+  header .painel-legenda
+  {
+  	width: 100%;
+  	height: 50px;
+  }
+
+  .central-banner
+  {
+  	height: 300px;
+  }
+
+  .central-banner #left .quadro-banner-legenda
+  {
+  	height: 50px;
+  	background-color: #F5F5F5;
+  }
+
+  .central-banner #left .quadro-banner-legenda h3
+  {
+  	font-size: 15px;
+  }
+
+  .central-banner #left .quadro-banner-body
+  {
+  	height: 100px;
+  }
+
+  .central-banner #left .quadro-banner-body img 
+  {
+  	width: 100px;
+  	height: 100px;
+  }
+
+  .central-banner #left .quadro-banner-form
+  {
+  	height: 100px;
+  }
+
+  .central-banner #left .quadro-banner-result
+  {
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 51px;
+    background-color: #F5F5F5;
+  }
+  
+  .central-banner #left .quadro-banner-result a
+  {
+    font-size: 10px;
+  }
+
+  .quadro-login
+  {
+  	width: 100%;
+  	height: 400px;
+  	margin-right: 0px;
+  	background-color: #F5F5F5;
+  }
+
+  .quadro-login .legenda-login
+  {
+  	/*border: 1px solid black;*/
+  	width: 100%;
+  	height: 50px;
+  }
+
+  .quadro-login .legenda-login p 
+	{
+		margin-top: 12px;
+		background-color: #ee4d2d;
+		padding: 10px;
+	}
+
+	.quadro-login .logo-login button
+	{
+		border-style: none;
+		width: 100%;
+		padding: 10px;
+		background-color: #32CD32;
+		margin-top: 5px;
+		color: white;
+		font-weight: 600;
+	}
+
+	.quadro-login .footer-login a 
+	{
+		text-decoration: none;
+		color: white;
+		font-weight: 600;
+		background-color: #1E90FF;
+		padding: 10px;
+	}
+
+	.central-banner #right .wallpapers-logo
+	{
+		width: 100%;
+	  height: 100%;
+	}
+
+  .central-banner #right .wallpapers-logo img 
+	{
+		width: 200px;
+		height: 100%;
+	}
+
+.central-banner #right .wallpapers-logo #animar
+	{
+	  /*animation: animar 10s infinite;*/
+	}
+
+	@keyframes animar{
+		0%{margin-left: 0px;}
+		20%{margin-left: -200px;}
+		40%{margin-left: -400px;}
+		60%{margin-left: -600px;}
+		80%{margin-left: -800px;}
+		100%{margin-left: 0px;}
+	}
+
+  .container
+  {
+  	margin-top: 180px;
+  }
+
+  .container .quadro 
+  {
+  	height: 250px;
+  }
+
+  .container .quadro .body-legenda
+  {
+  	width: 100%;
+  	height: 50px;
+  }
+
+  .container .quadro .body-body
+  {
+  	width: 100%;
+  	height: 150px;
+  }
+   
+  .container .quadro .body-body .img_and_descricao .precos
+  {
+    height: 30px;
+  } 
+
+  .container .quadro .body-footer
+  {
+  	width: 100%;
+  	height: 45px;
+  	display: grid;
+  	place-items: center;
+  }
+
+  .container .quadro .body-footer button
+  {
+  	border-style: none;
+  	background-color: transparent;
+  	color: white;
+  	font-weight: 600;
+  	font-size: 13px;
+  }
+
+  .container .quadro .body-body .img_and_descricao .imagem 
+  {
+  	width: 75px;
+  	height: 80px;
+  }
+
+  .pure-footer
+  {
+  	background-color: #F5F5F5;
+  	height: 559px;
+  }
+
+  .pure-footer .container-sm
+  {
+  	background-color: white;
+  }
+
+  .pure-footer .container-sm .div-colors
+  {
+  	padding-left: 25px;
+  }
+
+  .pure-footer .container-sm .div-colors p 
+	{
+		font-size: 10px;
+	}
+
+	.pure-footer .container-sm .div-colors a 
+	{
+		color: white;
+		text-decoration: none;
+		font-size: 10px;
+	}
+
+  .pure-footer .container-sm .div-colors a:hover
+	{
+		color: #00BFFF;
+		transition: 0.6s;
+	}
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/css/formulario.css">
+<title>Document</title>
+</head>
+<body>
+
+<header>
+	<h1>CADASTRE-SE</h1>
+</header>
+
+<div class="container" id="form-cadastro">
+	<a href="/" id="voltar">VOLTAR</a>
+	<div class="painel">
+			<div class="quadros">
+			<form action="/dados-form" method="POST">
+
+			<label>E-mail</label>
+			<input type="text" class="form-control" name="email" id="valores">
+			<label>Repetir-email</label>
+			<input type="text" class="form-control" name="repetir_email" id="valores">
+			<h1>Dados cadastrais</h1>
+
+			<label>Nome</label>
+			<input type="text" class="form-control" name="nome" id="valores">
+			<label>Sobre-nome</label>
+			<input type="text" class="form-control" name="sobre" id="valores">
+
+            <label>CPF</label>
+			<input type="text" class="form-control" name="cpf" id="valores">
+			<label>Telefone</label>
+			<input type="text" class="form-control" name="telefone" id="valores">
+
+			<label>Celular</label>
+			<input type="text" class="form-control" name="celular" id="valores">
+			<label>Nacimento</label>
+			<input type="text" class="form-control" name="nacimento" id="valores">
+            
+            <div>
+			<label>Sexo:</label>
+			<label>masculino</label>
+			<input type="radio" name="masculino" class="form-check-input" id="valores">
+			<label>feminino</label>
+			<input type="radio" name="feminino" class="form-check-input" id="valores">
+		    </div>
+            <div>
+		    <label>Receber ofertas e novidades no email</label>
+		    <input class="form-check-input" type="checkbox" name="novidades">
+            </div>
+
+		</div>
+		<div class="quadros">
+
+			<label>Crie uma senha</label>
+			<input type="password" class="form-control" name="senha" id="valores">
+			<label>Repetir-senha</label>
+			<input type="password" class="form-control" name="repetir_senha" id="valores">
+            <h1>Endereço de entrega</h1>
+
+            <label>Cep</label>
+			<input type="text" class="form-control" name="cep" id="valores">
+			<label>Rua</label>
+			<input type="text" class="form-control" name="rua" id="valores">
+            <label>Numero</label>
+			<input type="text" class="form-control" name="numero" id="valores">
+			<label>Complemento</label>
+			<input type="text" class="form-control" name="complemento" id="valores">
+
+			<label>Referencia</label>
+			<input type="text" class="form-control" name="referencia" id="valores">
+			<label>Bairro</label>
+			<input type="text" class="form-control" name="bairro" id="valores">
+
+			<label>Cidade</label>
+			<input type="text" class="form-control" name="cidade" id="valores">
+			<label>Estado</label>
+			<input type="text" class="form-control" name="estado" id="valores">
+             
+            <button type="submit" id="cadastro">Cadastre-se</button>       
+             
+		    </form>
+		</div>
+
+	</div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+	
+let forme = document.querySelector('#cadastro');
+
+forme.addEventListener('click',(req,res)=>{
+    let valores = document.querySelector('#valores');
+
+    if (valores.value == ''):
+    	alert('Campo vazio');
+    endif;
+  
+})
+
+</script>
+
+</html>
